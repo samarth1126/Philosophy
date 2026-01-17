@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophy</title>
+    <style>
+    a {
+    text-decoration: none;
+    }
+    .flex-container {
+      display: flex;
+      border-bottom: 1px solid black;
+    }
+    .card {
+      background:white;
+      border: 10px solid white;
+      height: 40px;
+      flex: 1;
+      text-align: center;
+      padding: 0px 5px 5px 5px;
+    }
+    .a{
+        padding: 5px 5px 40px 5px;
+        font-family: 'Smooch Sans', sans-serif;
+    }
+    .b{
+        padding: 5px 5px 40px 5px;
+        font-family: 'Smooch Sans', sans-serif;
+    }
+    .first-card{
+        background: rgb(255, 255, 255);
+        flex: 1;
+        height: 40px;
+        border: 10px solid white;
+        text-align: center;
+        padding: 0px 5px 5px 5px;
+    }
+    .second-card{
+        background: white;
+        color: rgb(59, 59, 225);
+        height: 40px;
+        border: 10px solid white;
+        flex: 3;
+        text-align: center;
+        padding: 0px 5px 5px 5px;
+    }
+    .space-card{
+        border-style: dashed;
+        border: 10px solid white;
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        padding: 0px 5px 5px 5px;
+    }
+    .below-line {
+        display: flex;
+        gap: 20px;              
+        padding: 0px 20px 5px 20px;    
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 18px;
+    }
+    .photo1 {
+        padding-left: 300px;
+        padding-right: 300px;
+        border-radius: 30%;
+    }
+    .text1{
+        width:900px;
+        margin-left: 300px;
+        margin-right:300px;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .stackwala {
+        position: relative;
+        width: 800px;
+        height: 500px;
+    }
+    .img {
+        position: absolute;
+        height: auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    .img1 {
+        z-index: 1;
+        width: 1000px;
+        height: auto;
+        left: 200px;
+        border-radius: 2%;
+    }
+    .img2 {
+        top: 100px;
+        width:300px;
+        left: 150px;
+        z-index: 2;
+        border-radius: 2%;
+    }
+    .img3 {
+        top: 150px;
+        left: 1000px;
+        z-index: 3;
+        width:300px;
+        border-radius: 2%
+    }
+    .text2{
+        width:900px;
+        margin-left: 300px;
+        margin-right:300px;
+        padding-top: 200px;
+        padding-bottom: 80px;
+    }
+    .ytphoto{
+        margin-left:450px;
+        border-radius: 1%;
+    }
+    .text3{
+        width:900px;
+        margin-left: 300px;
+        margin-right:300px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .flex-block {
+        display: flex;
+        margin-bottom: 50px;
+        height: 550px;
+        width: 100%;
+        border-bottom: 0.5px solid lightslategrey;
+    }
+    .block-1{
+        background-color: white;
+        flex: 1;
+        width: auto;
+        height: 450px;
+        margin-left: 250px;
+    }
+    .block-2{
+        flex: 1;
+        background-color: #b1c5ff;
+        height: 450px;
+        margin-right: 250px;
+        border: 2px solid #b1c5ff;
+    }
+    .para{
+        padding: 100px 60px 0px 60px;
+        font-size:x-large;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .big{
+        padding-top: 35px;
+        font-size: xx-large;
+        font-family: 'Roboto Mono', monospace;
+        padding-left: 200px;
+        text-shadow: black;
+    }
+    .last-flex{
+        display: flex;
+        height:30px;
+        margin-top: 75px;
+    }
+    .lastcard{
+        flex: 1;
+        font-size: xx-small;
+        text-align: center;
+        height: 30px;
+        width: auto;
+    }
+    .lastcard2{
+        flex: 2;
+        font-size: xx-small;
+        text-align: center;
+        height: 30px;
+        width: auto;
+    }
+    .lastcard5{
+        flex: 2;
+        font-size: xx-small;
+        text-align: center;
+        height: 30px;
+        width: auto;
+    }
+    .lastcard9{
+        flex: 2;
+        font-size: xx-small;
+        text-align: center;
+        height: 30px;
+        width: auto;
+    }
+    .lastspace{
+        flex: 11;
+        background-color: white;
+        height: 30px;
+        width: auto;
+    }
+    .contact{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        height: 30px;
+    }
+    .cont0{
+        flex: 1;
+        height:30px;
+        width:auto;
+    }
+    .cont1{
+        flex: 2;
+        height: 30px;
+        width:auto;
+    }
+    .cont{
+        margin-top: 9px;
+        flex: 1;
+        height: 30px;
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .cont2{
+        flex: 20;
+        height: 30px;
+        background-color: white;
+        width: auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="first-card">
+            <h3 class="a">||||</h3>
+        </div>
+        <div class="card">
+            <h3 class="a">Live</h3>
+        </div>
+        <div class="card">
+            <h3 class="a">Link</h3>
+        </div>
+        <div class="card">
+            <h3 class="a">Shop</h3>
+        </div>
+        <div class="card">
+            <h3 class="a">Packs</h3>
+        </div>
+        <div class="card">
+            <h3 class="a">Help</h3>
+        </div>
+        <div class="space-card">
+        </div>
+        <div class="space-card">
+        </div>
+        <div class="space-card"></div>
+        <div class="space-card"></div>      
+        <div class="second-card">
+            <h3 class="a">TryForFree</h3>
+        </div>
+        <div class="card">
+            <h4 class="b">LogOut</h4>
+        </div>
+        <div class="card">
+            <h4 class="b">Account</h4>
+        </div>
+    </div>
+    <div class="below-line">
+        <h3 style="color: coral;">About</h3>
+        <h3>Jobs</h3>
+    </div>
+    <div class="1stphoto">
+        <img src="./assets/1stphoto.png" class="photo1">
+    </div>
+    <div class="text1">
+        <h2 class="text1a" style="font-family: 'Roboto Condensed', Arial, sans-serif;">We Introduce you to the world of- <span style="color: blueviolet;">Philosophy</span></h2>
+        <h2 class="text1b" style="font-family: 'Roboto Condensed', Arial, sans-serif;">It's not an ordinary road, its a road of severe depression and uncertainty in the things you once believed in.</h2>
+        <h2 class="text1c" style="font-family: 'Roboto Condensed', Arial, sans-serif;">Understand the Thing you are stepping into and begin your journey accordingly.</h2>
+        <h3 class="text1d" style="font-family: 'Roboto Condensed', Arial, sans-serif; color:#b1c5ff;">"The meaning of life is that it stops"</h3>
+        <h3 class="text1e" style="font-family: 'Roboto Condensed', Arial, sans-serif; color:#b1c5ff;">"I am a cage in search of bird"</h3>
+    </div>
+    <div class="stackwala">
+        <img src="./assets/bookmain.png" class="img img1">
+        <img src="./assets/book1.png" class="img img2">
+        <img src="./assets/photo2.png" class="img img3">
+    </div>
+    <div class="text2">
+        <h2 class="text2a" style="font-family: 'Indie Flower', cursive; color:#ff764d";>Reading philosophy and understanding it are two different things. This web-page provides with all the information you need to know and understand more about it.</h2>
+        <h2 class="text2a" style="font-family: 'Indie Flower', cursive;">Philosophy as some may call it an Absurd Branch of Human Knowledge, is filled with unknowing understanding of the world.</h2>
+        <h3 class="text2a" style="font-family: 'Indie Flower', cursive; color:#b1c5ff;">It can be classified into many types, the ones shown above are itself are called Greek Philosophy, there is ancient philosophy, modern philosophy, etc</h3>
+    </div>
+    <div class="photo3">
+        <a href="https://www.youtube.com/results?search_query=why+philosophy"><img src="./assets/ytlink.png" class="ytphoto" ></a>
+        <h6 style="font-family: 'Indie Flower', cursive; color:#b1c5ff; text-align: center;">Why to read philosophy?</h6>
+    </div>
+    <div class="text3">
+        <h2 class="text3a" style="font-family: 'Smooch Sans', sans-serif; color:darkslateblue;">Philosophy literally means "love for wisdom", from greek letters <span style="font-family: 'Dancing Script', cursive;">philo</span>(love) and <span style="font-family: 'Dancing Script', cursive;">sophia</span>(wisdom).</h2>
+        <h2 class="text3b" style="font-family: 'Smooch Sans', sans-serif; color:darkslateblue;">Philosophy predates modern science and mathematics as formal fields of study. It explores questions about reality (What exists?), knowledge (What can we know?), ethics (What is right?), and meaning (What is the purpose of life?).</h2>
+        <h2 class="text3c" style="font-family: 'Smooch Sans', sans-serif; color: #ff764d;">These are major branches of Philosophy:</h2>
+        <ul type="disk" style="color: #b1c5ff; font-family: 'Archivo Black', sans-serif;">
+            <li>Metaphysics — nature of reality</li>
+            <li>Epistemology — nature of knowledge</li>
+            <li>Ethics — moral philosophy</li>
+            <li>Logic — rules of valid reasoning</li>
+            <li>Aesthetics — philosophy of art and beauty</li>
+        </ul>
+    </div>
+    <div class="flex-block">
+        <div class="block-1"><img src="./assets/osho.png" style="width:auto; height: 453px;"></div>
+        <div class="block-2">
+            <p style="color: darkslategrey;"  class="para">The journey doesn't need to end here, if you want to be a part of our journey then click below to enter the world of Philosophy and Deep-dive into the world of absolute <span style="color: brown;">despair</span></p>
+            <a href="https://www.openculture.com/free-philosophy-ebooks"><h2 style="font-family: 'Montserrat', sans-serif; padding-left: 60px;">See More ></h2></a>
+        </div>
+    </div>
+    <div class="bigtext">
+        <h1 class="big">Philophise Yourself</h1>
+    </div>
+    <div class="last-flex">
+        <div class="lastcard">
+            <h2 style="padding-bottom: 3px;  font-family: 'Comfortaa', sans-serif; text-align: center;">Archive</h2>
+        </div>
+        <div class="lastcard2">
+            <h2 style="padding-bottom: 3px;  font-family: 'Comfortaa', sans-serif; text-align: center;">Contact Us</h2>
+        </div>
+        <div class="lastcard">
+            <h2 style="padding-bottom: 3px;  font-family: 'Comfortaa', sans-serif; text-align: center;">Resources</h2>
+        </div>
+        <div class="lastcard">
+            <h2 style="padding-bottom: 3px;  font-family: 'Comfortaa', sans-serif; text-align: center;">Info</h2>
+        </div>
+        <div class="lastcard5">
+            <h2 style="padding-bottom: 3px;  font-family: 'Comfortaa', sans-serif; text-align: center;">Privacy Policy</h2>
+        </div>
+        <div class="lastcard">
+            <h2 style="padding-bottom: 3px;  font-family: 'Comfortaa', sans-serif; text-align: center;">Cookies</h2>
+        </div>
+        <div class="lastcard">
+            <h2 style="padding-bottom: 3px;  font-family: 'Comfortaa', sans-serif; text-align: center;">Imprint</h2>
+        </div>
+        <div class="lastspace"></div>
+        <div class="lastcard9">
+            <h2 style="padding-bottom: 3px;  font-family: 'Comfortaa', sans-serif; text-align: center;">Made in NITC</h2>
+        </div>
+        <div class="lastcard">
+            <h2 style="padding-bottom: 3px;  font-family: 'Comfortaa', sans-serif; text-align: center;">//||\\</h2>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="cont0"></div>
+        <div class="cont1">
+            <h1 style="font-family: 'Orbitron', sans-serif; font-size: larger; text-align: center;">Follow Us</h1>
+        </div>
+        <div class="cont">
+            <a href="https://www.linkedin.com/in/samarth-gumate-5b633839b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./assets/link.png" alt="" style="height:30px; width:auto" ></a>
+        </div>
+        <div class="cont">
+            <a href="https://www.youtube.com/@KFoundation"><img src="./assets/yt.png" alt="" style="height:30px; width:auto" ></a>
+        </div>
+        <div class="cont">
+            <a href="https://www.instagram.com/samarth_26_11/"><img src="./assets/ig.png" alt="" style="height:30px; width:auto" ></a>
+        </div>
+        <div class="cont2"></div>
+    </div>
+</body>
+</html>
+
